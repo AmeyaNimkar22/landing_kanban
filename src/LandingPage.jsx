@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { ArrowRight, Plus, MoveRight } from "lucide-react";
+import heroImg from "./edits/hero_img.jpg";
+import f1 from "./edits/f1.png";
+import f2 from "./edits/f2.png";
+import f3 from "./edits/f3.png";
+import f4 from "./edits/f4.png";  
+
 
 const columnAnim = {
   hidden: { opacity: 0, y: 30 },
@@ -50,7 +56,7 @@ export default function LandingPage() {
               <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-purple-300/40 blur-3xl" />
               <div className="relative rounded-3xl bg-white/70 backdrop-blur-xl shadow-2xl p-6">
                 <img
-                  src="/edits/hero_img.jpg"
+                  src={heroImg}
                   alt="Kanban UI"
                   className="rounded-2xl"
                 />
@@ -110,19 +116,19 @@ export default function LandingPage() {
           {[{
             title: "Create Your Account",
             desc: "Get started in seconds with a clean onboarding flow. Your boards are saved securely and accessible anytime.",
-            img: "/edits/f1.png",
+            img: f1,
           },{
             title: "Edit Tasks Effortlessly",
             desc: "Add, move, and update tasks with fluid drag-and-drop interactions designed to keep you in flow.",
-            img: "/edits/f2.png",
+            img: f2,
           },{
             title: "Smooth & Minimal UI",
             desc: "Every animation is subtle, intentional, and calming — helping you focus without distractions.",
-            img: "/edits/f3.png",
+            img: f3,
           },{
             title: "Phone Friendly",
             desc: "Fully responsive design ensures a seamless experience across mobile, tablet, and desktop devices.",
-            img: "/edits/f4.png",
+            img: f4,
           }].map((f, i) => (
             <motion.div
               key={i}
