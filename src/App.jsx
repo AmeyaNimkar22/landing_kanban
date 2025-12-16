@@ -1,4 +1,4 @@
-import LandingPage from ".src/LandingPage.jsx";
+import LandingPage from "./LandingPage.jsx";
 
 export default function App() {
   return <LandingPage />;
